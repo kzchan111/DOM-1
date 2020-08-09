@@ -1,0 +1,13 @@
+//获取对应的元素
+const div = dom.find("#test")[0];
+console.log(div);
+
+//设置div.style.color
+dom.style(div, "color", "red");
+
+//获取多个 div.red 元素
+const divList = dom.find(".red");
+console.log(divList);
+
+// 遍历 divList 里的所有元素
+dom.each(divList, (n) => console.log(n));
